@@ -1,2 +1,2 @@
 # Bootstrap_Curso
-Curso Bootstrao y Responsive Design
+Curso Bootstrap y Responsive Design
