@@ -10,37 +10,38 @@
 
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Footer</title>
+    <title>Conferencia</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#natbar" data-offset="56">
 
     <!-- Header -->
         <!-- Nav -->
-        <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
           <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <img src="img/logo.jpg" alt="Logo" style="width: 5%;">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="natbar">
 
 
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">LA CONFERENCIA</a>
+                  <a class="nav-link" aria-current="page" href="#main">LA CONFERENCIA</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ORADORES</a>
+                  <a class="nav-link" href="#speakers">ORADORES</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">LUGAR Y FECHA</a>
                 </li>
             
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONVIERETE EN ORADOR </a>
+                  <a class="nav-link" href="#conviertete-en-orador">CONVIERETE EN ORADOR </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-compra" href="#">COMPRA DE TICKETS</a>
+                  <a class="nav-link text-compra" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">COMPRA DE TICKETS</a>
                 </li>
             
               </ul>
@@ -56,10 +57,10 @@
     <!-- Main -->
 
     <main id="main">
-              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="img/01.png" class="d-block w-100" alt="...">
+                    <img src="img/01.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item" data-bs-interval="5000">
                     <img src="img/02.jpg" class="d-block w-100" alt="...">
@@ -67,14 +68,142 @@
                   <div class="carousel-item" data-bs-interval="5000">
                     <img src="img/03.jpg" class="d-block w-100" alt="...">
                   </div>
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img/04.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <div class="overlay">
+                  <div class="container">
+                     <div class="row align-items-center">
+                       <div class="col-md-6 offset-md-6 text-center text-md-end">
+                              <h1>Conferencia New York</h1>
+                              <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, sed! Nam eos soluta asperiores nobis iusto, at amet ea rem ex iure voluptate quia doloremque, ab quisquam facere dignissimos dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quia eum, omnis sequi nostrum minima asperiores itaque obcaecati harum? Consequatur, porro ut quis consectetur illo vel repellat! Dignissimos, nulla laborum?</p>
+                              <a href="" class="btn btn-outline-light">Quiero ser orador</a>
+                              <button type="button" class="btn btn-comprar" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar Tickets</button>
+
+                       </div>
+                     </div>
+                  </div>
+
                 </div>
               </div>
           </main>
-    
-
-
-
     <!-- /Main -->
+
+
+    <!-- Speakers -->
+    <section id="speakers" class="mt-4">
+
+        <div class="container">
+
+              <div class="row mb-4">
+                    <div class="col-12 text-center text-uppercase">
+                        <small>Conoce a los </small>
+                        <h2>Oradores</h2>
+                    </div>
+                    <div class="card col-md-4">
+                    <img src="img/spekears/01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="badges">
+                        <span class="badge bg-warning">JavaScript</span>
+                        <span class="badge bg-info">React</span>
+                      </div>
+                      <h5 class="card-title">Mark Smith</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card col-md-4">
+                    <img src="img/spekears/02.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lena Thomsonn</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card col-md-4">
+                    <img src="img/spekears/03.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Judith Karr</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="row mb-4">
+                      <div class="card col-md-4">
+                      <img src="img/spekears/04.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Samuel Richard</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <div class="card col-md-4">
+                      <img src="img/spekears/05.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Omar Lunnar</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+                      </div>
+                    </div>
+                    <div class="card col-md-4">
+                      <img src="img/spekears/06.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Virginia Silvster</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+              </div>
+        </div>    
+  </section>
+<!-- /Speakers -->
+
+<!-- Conviertete en orador -->
+
+      <section id="conviertete-en-orador" class="pt-2 pb-2">
+        <div class="container">
+          <div class="row">
+              <div class="col  text-uppercase text-center">
+                  <small>Conviertete en un</small>
+                  <h2>Ordor</h2>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              Anótate como orador para dar una charla ignite.
+              Cuéntanos de que quieres hablar.
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 offset-md-2 mt-4">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">¿Sobre que quieres hablar?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="submit" value="Enviar" class="form-control btn btn-comprar">
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
+
+
+
+<!-- /Conviertete en orador -->
 
     <!-- Footer -->
     <footer id="footer" class="pb-4 pt-4"> 
@@ -107,6 +236,43 @@
 
     </footer>
     <!-- /Footer -->
+
+
+
+
+    <!-- Modal -->
+            <div class="modal fade" id="modalCompra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Comprar Ticket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="form-row">
+                          <div class="form-group col">
+                            <div class="input-group flex-nowrap">
+                              <span class="input-group-text" id="addon-wrapping">@</span>
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                          </div>
+                      </div>
+                    </form>
+                   
+                  </div>
+                   <div class="alert alert-warning" role="alert">
+                      Recibiras un correo de confirmación.
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-comprar">Comprar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+    <!-- /Modal -->
 
 
 
