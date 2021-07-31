@@ -7,4 +7,4 @@ HTML, CSS y JS
 </br>
 
 
-Visitame : https://inspiring-haibt-93c164.netlify.app/
+Visitame : https://sebasgalvan.github.io/Sitio-Conferencia-RD/
